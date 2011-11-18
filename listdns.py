@@ -23,7 +23,7 @@ def lookup(sp, qdict) :
                         if str(key) == subdomain :
                             if type(value[u"map"][key]) == types.DictType :
                                 return dnslookup(value, key, qdict)
-                            return str(value[u"map"][u""])
+                            return str(value[u"map"][key])
                         #else :
                             #if type(value[u"map"][key]) == types.DictType :
                                 #return dnslookup(domain, qt)
